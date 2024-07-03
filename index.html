@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לימוד יומי אישי</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>לימוד יומי אישי</h1>
+    הוראות: בחר קובץ 
+    PDF 
+    שברצונך ללמוד.<br>
+    <input type="file" id="fileInput">
+    <div id="pdfInfo" style="display:none;">
+        <p id="numPages"></p>
+        <label for="startPageInput">מאיזה עמוד להתחיל: </label>
+        <input type="number" id="startPageInput" value="1">
+        <label for="daysInput">לכמה ימים לחלק את הלימוד: </label>
+        <input type="number" id="daysInput">
+        <button id="calculateBtn">הורד את הקובץ עם החלוקה</button>
+        <div id="schedule"></div>
+    </div>
+    <!-- Load the pdf.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <!-- Load the pdf-lib library -->
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

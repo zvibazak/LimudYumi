@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+    direction: rtl; /* הוסף כיווניות ימין לשמאל */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+input[type="file"], input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center; /* הוסף יישור מרכזי */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #357ab7;
+}
+
+#pdfInfo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#schedule {
+    margin-top: 20px;
+}
+
+.page-date {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    input[type="file"], input[type="number"] {
+        width: 90%;
+    }
+}
+
